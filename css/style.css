@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height: 100vh;
+    background-image: url('../img/synergie-fond.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 1%;
+    color: #000000;
+}
+
+section {
+
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin: 4%;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 3%;
+    padding-top: 3%;
+
+}
+
+.sect1 p {
+
+    margin-bottom: 2%;
+
+}
+
+.objectifs li {
+
+    margin: 1%;
+    font-size: large;
+    font-weight: 600;
+}
+
+.fb-logo {
+
+    width: 5em;
+}
+
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.flex-item {
+
+    transition: 0.5s;
+
+}
+
+.flex-item:hover {
+
+    transform: scale(1.2, 1.2);
+
+}
+
+
+/*Formulaire*/
+
+form label {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 130%;
+}
+
+form input {
+    margin-bottom: 3%;
+    padding-right: 5%;
+
+}
+
+
+
+/*Footer*/
+
+
+
+footer {
+    background-color: #282828;
+    color: #f5f5f5;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    font-size: 80%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.footer-2 {
+    position: absolute;
+}
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container ul li {
+
+    display: block;
+    padding: 5px 20px;
+
+}
+
+
+.fb-logo-f{
+
+    width: 2em;
+
+}
+
+/* Haut de Page */
+
+.haut-page ul li h1 {
+
+    font-size: 210%;
+
+
+}
+
+.haut-page ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.haut-page ul li {
+
+    display: block;
+    padding: 0 40px;
+
+}
+
+/* Barre De Navigation */
+
+.navbar {
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    font-size: 130%;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    display: block;
+    padding: 0 80px;
+    transition: 0.2s;
+
+}
+
+.navbar .nav-links ul li:hover{
+
+    transform: scale(1.1, 1.1);
+
+
+}
+
+
+.navbar .nav-links ul li.active a {
+    color: #b4f8c8;
+    font-size: 120%;
+
+}
+
+
+.logo {
+    width: 10em;
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .navbar {
+        padding: 0;
+        flex-direction: column;
+    }
+
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .navbar .nav-links ul li {
+
+        margin: 25px 0;
+        font-size: 1.5em;
+
+    }
+
+    section{
+
+        margin-top: 10%;
+        margin-bottom: 10%;
+
+    }
+
+
+
+    .haut-page ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .haut-page ul li {
+
+        display: block;
+        padding: 0 40px;
+
+    }
+
+
+    footer {
+        position: relative;
+    }
+
+    form textarea {
+
+        font-size: 70%;
+
+    }
+
+
+}
