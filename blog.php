@@ -23,7 +23,7 @@
 					<a href="./blog.php"><i class="fa-solid fa-square-rss"></i> Blog</a>
 				</li>
 				<li>
-					<a href="./ressources.html"><i class="fa-solid fa-circle-info"></i> Ressources</a>
+					<a href="./ressources.php"><i class="fa-solid fa-circle-info"></i> Ressources</a>
 				</li>
 				<li>
 					<a href="./contact.html"><i class="fa-regular fa-envelope"></i> Contact</a>

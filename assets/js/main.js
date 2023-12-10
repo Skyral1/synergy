@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const items = [
 		{ text: "Accueil", icon: "fa-house", link: "./" },
 		{ text: "Blog", icon: "fa-square-rss", link: "./blog.php" },
-		{ text: "Ressources", icon: "fa-circle-info", link: "./ressources.html" },
+		{ text: "Ressources", icon: "fa-circle-info", link: "./ressources.php" },
 		{ text: "Contact", icon: "fa-envelope", link: "./contact.html" },
 	];
 

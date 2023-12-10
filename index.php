@@ -35,7 +35,7 @@
 						>
 					</li>
 					<li>
-						<a href="./ressources.html"
+						<a href="./ressources.php"
 							><i class="fa-solid fa-circle-info"></i> Ressources</a
 						>
 					</li>
