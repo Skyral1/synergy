@@ -122,6 +122,16 @@ p {
 	margin: 2em;
 }
 
+#ogj {
+	
+	text-align: left;
+}
+
+#obj ul{
+	margin: 0% 35% 0% 35%;
+	text-align: left;
+}
+
 /* Annonces */
 .annonce {
 	background-color: rgb(165, 165, 165);
@@ -223,6 +233,10 @@ footer {
 	nav ul li {
 		display: block; /* Change l'affichage des éléments de la liste */
 		text-align: center;
+	}
+
+	#obj ul{
+		margin: 0% 0% 0% 15%;
 	}
 
 	/* Main, p, #home-text, Footer - ajoutez des styles spécifiques pour les petits écrans si nécessaire */
