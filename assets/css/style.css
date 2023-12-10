@@ -1,211 +1,170 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;700&display=swap");
+
+/* Variables */
+:root {
+	--text-color: black;
+	--header-bg-color: #222121;
+}
+
+/* All document properties */
 * {
 	margin: 0;
 	padding: 0;
-	text-decoration: none;
-	list-style-type: none;
+	font-family: "Afacad", sans-serif;
+	color: var(--text-color);
 }
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(158, 158, 158); /* Couleur des liens survolés */
+}
+
+/* Body */
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	color: black;
-	height: 100vh;
 	background-image: url("../img/synergie-fond.png");
 	background-size: cover;
 	background-attachment: fixed;
 }
 
+/* Header */
 header {
-	text-align: center;
-	background-color: #f5f5f5;
-	padding: 1%;
-	color: #000000;
-}
-
-section {
-	background-color: rgba(255, 255, 255, 0.7);
-	text-align: center;
-	margin: 4%;
-	border-radius: 10px;
-	color: rgb(0, 0, 0);
-	padding-bottom: 3%;
-	padding-top: 3%;
-}
-
-.sect1 p {
-	margin-bottom: 2%;
-}
-
-.objectifs li {
-	margin: 1%;
-	font-size: large;
-	font-weight: 600;
-}
-
-.fb-logo {
-	width: 5em;
-}
-
-.flex-container {
-	padding: 0;
-	margin: 0;
-	padding-bottom: 3%;
-	list-style: none;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.flex-item {
-	transition: 0.5s;
-}
-
-.flex-item:hover {
-	transform: scale(1.2, 1.2);
-}
-
-/*Formulaire*/
-
-form label {
-	display: flex;
-	flex-direction: column;
-	font-size: 130%;
-}
-
-form input {
-	margin-bottom: 3%;
-	padding-right: 5%;
-}
-
-/*Footer*/
-
-footer {
-	background-color: #282828;
-	color: #f5f5f5;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	position: relative;
-	font-size: 80%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-}
-
-.footer-2 {
-	position: absolute;
-}
-
-.footer-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.footer-container ul li {
-	display: block;
-	padding: 5px 20px;
-}
-
-.fb-logo-f {
-	width: 2em;
-}
-
-/* Haut de Page */
-
-.haut-page ul li h1 {
-	font-size: 210%;
-}
-
-.haut-page ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.haut-page ul li {
-	display: block;
-	padding: 0 40px;
-}
-
-/* Barre De Navigation */
-
-.navbar {
-	background-color: #282828;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1%;
-	font-size: 130%;
+	background-color: var(--header-bg-color);
 }
 
-.navbar a {
-	color: rgb(255, 255, 255);
+header img {
+	width: 125px;
+	height: auto;
 }
 
-.navbar .nav-links ul {
+/* NavBar */
+nav {
 	display: flex;
+	justify-content: center;
+	margin: 0 20px;
 }
 
-.navbar .nav-links ul li {
-	display: block;
-	padding: 0 80px;
-	transition: 0.2s;
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
 }
 
-.navbar .nav-links ul li:hover {
-	transform: scale(1.1, 1.1);
+nav ul li {
+	display: inline;
 }
 
-.navbar .nav-links ul li.active a {
-	color: #b4f8c8;
-	font-size: 120%;
+nav ul li a {
+	color: #e9e9e9;
+	text-decoration: none;
 }
 
-.logo {
-	width: 10em;
+/* Burger menu */
+
+/* Ajoutez les styles pour le burger menu */
+.burger-menu {
+	display: none; /* Masque le burger menu par défaut */
+	cursor: pointer;
 }
 
-@media screen and (max-width: 450px) {
-	.navbar {
-		padding: 0;
-		flex-direction: column;
-	}
+/* Ajoutez les styles pour les lignes du burger menu */
+.line1,
+.line2,
+.line3 {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
 
+/* Animation pour transformer les lignes en croix */
+.change .line1 {
+	transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.change .line2 {
+	opacity: 0;
+}
+
+.change .line3 {
+	transform: rotate(45deg) translate(-6px, -5px);
+}
+
+/* Styles supplémentaires pour les appareils mobiles */
+@media screen and (max-width: 768px) {
 	.nav-links {
-		display: flex;
-		justify-content: center;
+		display: none; /* Masque la liste de navigation par défaut pour les appareils mobiles */
+	}
+	.burger-menu {
+		display: block; /* Affiche le burger menu pour les appareils mobiles */
+	}
+}
+
+/* Main */
+main {
+	text-align: center;
+	text-wrap: balance;
+}
+
+p {
+	margin: 2em;
+}
+
+#home-text {
+	margin: 4%;
+	padding: 2.5em 0 2.5em 0;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Footer */
+footer {
+	background-color: var(--header-bg-color);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+/* Ajustements pour les petits écrans (par exemple, les smartphones) */
+@media screen and (max-width: 768px) {
+	/* Body */
+	body {
+		/* Ajoutez des styles pour les petits écrans si nécessaire */
 	}
 
-	.nav-links ul {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	/* Header */
+	header {
+		flex-direction: column; /* Pour empiler les éléments dans le header sur les petits écrans */
+		text-align: center;
 	}
 
-	.navbar .nav-links ul li {
-		margin: 25px 0;
-		font-size: 1.5em;
+	header img {
+		margin-bottom: 20px; /* Ajoute de l'espace entre le logo et la liste sur les petits écrans */
 	}
 
-	section {
-		margin-top: 10%;
-		margin-bottom: 10%;
+	/* NavBar */
+	nav {
+		margin: 20px 0; /* Ajuste la marge sur les petits écrans */
 	}
 
-	.haut-page ul {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	nav ul {
+		flex-direction: column; /* Empile les éléments de la liste sur les petits écrans */
+		gap: 10px; /* Espacement entre les éléments de la liste */
 	}
 
-	.haut-page ul li {
-		display: block;
-		padding: 0 40px;
+	nav ul li {
+		display: block; /* Change l'affichage des éléments de la liste */
+		text-align: center;
 	}
 
-	footer {
-		position: relative;
-	}
-
-	form textarea {
-		font-size: 70%;
-	}
+	/* Main, p, #home-text, Footer - ajoutez des styles spécifiques pour les petits écrans si nécessaire */
 }
