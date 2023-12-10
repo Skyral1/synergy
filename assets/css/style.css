@@ -158,11 +158,6 @@ footer {
 
 /* Ajustements pour les petits écrans (par exemple, les smartphones) */
 @media screen and (max-width: 768px) {
-	/* Body */
-	body {
-		/* Ajoutez des styles pour les petits écrans si nécessaire */
-	}
-
 	/* Header */
 	header {
 		flex-direction: column; /* Pour empiler les éléments dans le header sur les petits écrans */
