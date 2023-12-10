@@ -16,6 +16,10 @@ if ($conn->connect_error) {
 // Récupérer les données du formulaire
 $titre = mysqli_real_escape_string($conn, $_POST['titre']);
 $texte = mysqli_real_escape_string($conn, $_POST['texte']);
+// Définir le fuseau horaire sur celui de la Belgique
+date_default_timezone_set('Europe/Brussels');
+
+// Récupérer la date et l'heure actuelles
 $date = date('Y-m-d H:i:s');
 
 // Traitement de l'image uploadée
@@ -50,6 +54,8 @@ $sql = "INSERT INTO annonces (titre, texte, image, date) VALUES ('$titre', '$tex
 
 if ($conn->query($sql) === TRUE) {
     echo "Annonce créée avec succès";
+    header("Location: blog.php");
+    exit();
 } else {
     echo "Erreur lors de la création de l'annonce : " . $conn->error;
 }
