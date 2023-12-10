@@ -110,19 +110,41 @@ nav ul li a {
 
 /* Main */
 main {
-	text-align: center;
 	text-wrap: balance;
+	text-align: center;
+	margin: 4%;
+	padding: 2.5em 0 2.5em 0;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 p {
 	margin: 2em;
 }
 
-#home-text {
-	margin: 4%;
-	padding: 2.5em 0 2.5em 0;
+/* Annonces */
+.annonce {
+	background-color: rgb(165, 165, 165);
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre pour le relief */
+	margin: 20px 25em 2em 25em;
+	padding: 20px;
+}
+
+.annonce img {
+	width: 20%; /* Assurez-vous que les images à l'intérieur du post occupent toute la largeur */
+	border-radius: 5px;
+	margin-bottom: 15px; /* Ajoute un espace en dessous de l'image */
+}
+
+.annonce h2 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.annonce p {
+	line-height: 1.5;
+	margin-bottom: 15px;
 }
 
 /* Footer */
