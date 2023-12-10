@@ -59,6 +59,60 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Page de Connexion</title>
 </head>
 
+<style>
+    /* Ajoute ces styles pour la page de connexion */
+
+    body {
+        font-family: "Afacad", sans-serif;
+        background-image: url(./assets/img/synergie-fond.png);
+        text-align: center;
+        padding: 50px;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label,
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+        background-color: #3366ff;
+        color: #fff;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #254785;
+    }
+</style>
+
 <body>
 
     <h2>Connexion</h2>
