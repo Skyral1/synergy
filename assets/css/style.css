@@ -68,10 +68,30 @@ nav ul li a {
 
 /* Burger menu */
 
-/* Ajoutez les styles pour le burger menu */
 .burger-menu {
-	display: none; /* Masque le burger menu par défaut */
-	cursor: pointer;
+	display: none;
+}
+
+/* Styles pour cacher la liste du burger */
+.burger-list {
+	display: none;
+}
+
+/* Styles pour afficher la liste du burger lorsqu'elle a la classe 'active' */
+.burger-list.active {
+	display: block;
+	background-color: var(--header-bg-color); /* Ajoute un fond au menu */
+	position: absolute; /* Permet de superposer le menu */
+	top: 25%; /* Positionne le menu juste en dessous du header */
+	left: 0;
+	width: 100%;
+	z-index: 999; /* Assure que le menu est au-dessus de tout le reste */
+	padding: 0; /* Réinitialise le padding pour le menu */
+	margin: 0; /* Réinitialise la marge pour le menu */
+}
+
+.burger-list.active li {
+	margin: 1.5em 0; /* Ajoute de l'espace entre les éléments du menu */
 }
 
 /* Ajoutez les styles pour les lignes du burger menu */
@@ -123,11 +143,10 @@ p {
 }
 
 #ogj {
-	
 	text-align: left;
 }
 
-#obj ul{
+#obj ul {
 	margin: 0% 35% 0% 35%;
 	text-align: left;
 }
@@ -136,25 +155,57 @@ p {
 .annonce {
 	background-color: rgb(165, 165, 165);
 	border-radius: 10px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre pour le relief */
-	margin: 20px 25em 2em 25em;
-	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 5vw; /* Utilisation d'une unité relative pour le padding */
+	margin: 5vw; /* Utilisation d'une unité relative pour la marge */
 }
 
 .annonce img {
-	width: 20%; /* Assurez-vous que les images à l'intérieur du post occupent toute la largeur */
+	width: 100%; /* Les images occupent maintenant toute la largeur */
 	border-radius: 5px;
-	margin-bottom: 15px; /* Ajoute un espace en dessous de l'image */
+	margin-bottom: 3vw; /* Utilisation d'une unité relative pour l'espace en dessous de l'image */
 }
 
 .annonce h2 {
-	font-size: 1.2em;
-	margin-bottom: 10px;
+	font-size: 2em; /* Utilisation d'une taille de police relative */
+	margin-bottom: 2vw; /* Utilisation d'une unité relative pour l'espacement */
 }
 
 .annonce p {
 	line-height: 1.5;
-	margin-bottom: 15px;
+	margin-bottom: 3vw; /* Utilisation d'une unité relative pour l'espacement */
+}
+
+/* Media query pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+	.annonce {
+		margin: 5vw;
+		padding: 5vw;
+	}
+
+	.annonce h2 {
+		font-size: 1.5em;
+	}
+
+	.annonce p {
+		font-size: 1em;
+	}
+}
+
+/* Media query pour les écrans plus petits (mobiles, etc.) */
+@media screen and (max-width: 480px) {
+	.annonce {
+		margin: 5vw;
+		padding: 5vw;
+	}
+
+	.annonce h2 {
+		font-size: 1.2em;
+	}
+
+	.annonce p {
+		font-size: 0.9em;
+	}
 }
 
 /* Form */
@@ -235,7 +286,7 @@ footer {
 		text-align: center;
 	}
 
-	#obj ul{
+	#obj ul {
 		margin: 0% 0% 0% 15%;
 	}
 

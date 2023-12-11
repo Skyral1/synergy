@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     body {
         font-family: "Afacad", sans-serif;
-        background-image: url(./assets/img/synergie-fond.png);
+        background-image: url(./assets/img/synergie-fond.webp);
         text-align: center;
         padding: 50px;
     }
