@@ -7,6 +7,9 @@ if (!isset($_COOKIE['user'])) {
 }
 ?>
 
+<!-- Dev by @Skyral_ -->
+<!-- https://github.com/Skyral1 -->
+
 <!DOCTYPE html>
 <html lang="fr">
 

@@ -1,3 +1,6 @@
+<!-- Dev by @Skyral_ -->
+<!-- https://github.com/Skyral1 -->
+
 <?php
 // Se connecter à la base de données (utilisez vos propres informations de connexion)
 $servername = "localhost";

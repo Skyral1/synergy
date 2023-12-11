@@ -1,3 +1,6 @@
+<!-- Dev by @Skyral_ -->
+<!-- https://github.com/Skyral1 -->
+
 <?php
 // Vérifier la présence du cookie de connexion
 if (!isset($_COOKIE['user'])) {

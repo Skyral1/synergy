@@ -1,3 +1,6 @@
+<!-- Dev by @Skyral_ -->
+<!-- https://github.com/Skyral1 -->
+
 <?php
 setlocale(LC_TIME, 'fr_FR.utf8'); // Définition de la localisation en français
 // Se connecter à la base de données (utilisez vos propres informations de connexion)

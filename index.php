@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="assets/css/style.css" preload />
 	<script src="https://kit.fontawesome.com/28b70435c7.js" crossorigin="anonymous" defer></script>
 	<script src="./assets/js/main.js" defer></script>
+	<!-- Dev by @Skyral_ -->
+	<!-- https://github.com/Skyral1 -->
 	<title>Document</title>
 </head>
 
