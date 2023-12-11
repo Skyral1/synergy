@@ -29,6 +29,9 @@
 				<li>
 					<a href="./contact.html"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Contact</a>
 				</li>
+				<li>
+					<a href="./create_announcement.php"><i class="fa-solid fa-plus" style="color: #ffffff;"></i> New post</a>
+				</li>
 			</ul>
 		</nav>
 		<div class="burger-menu">

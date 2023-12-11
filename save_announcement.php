@@ -28,6 +28,14 @@ $image = ''; // Variable pour stocker le chemin de l'image dans la base de donn�
 if ($_FILES['image']['error'] === UPLOAD_ERR_OK) {
     $targetDir = "./server/annonces/images/"; // Répertoire où seront stockées les images uploadées
 
+    // Vérifier si le répertoire annonces/images existe, sinon le créer
+    if (!file_exists('./server/annonces/images/')) {
+        // Créer le répertoire annonces/images ainsi que ses parents si nécessaire
+        if (!mkdir('./server/annonces/images/', 0777, true)) {
+            die("Erreur : Impossible de créer le répertoire");
+        }
+    }
+
     // Récupération du nom du fichier téléchargé
     $fileName = basename($_FILES["image"]["name"]);
     $targetFile = $targetDir . $fileName;

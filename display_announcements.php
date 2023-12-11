@@ -1,4 +1,5 @@
 <?php
+setlocale(LC_TIME, 'fr_FR.utf8'); // Définition de la localisation en français
 // Se connecter à la base de données (utilisez vos propres informations de connexion)
 $servername = "localhost";
 $username = "root";
@@ -18,6 +19,21 @@ $sql = "SELECT titre, texte, image, date FROM annonces ORDER BY date DESC"; // T
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+    $mois_fr = [
+        'January' => 'janvier',
+        'February' => 'février',
+        'March' => 'mars',
+        'April' => 'avril',
+        'May' => 'mai',
+        'June' => 'juin',
+        'July' => 'juillet',
+        'August' => 'août',
+        'September' => 'septembre',
+        'October' => 'octobre',
+        'November' => 'novembre',
+        'December' => 'décembre'
+    ];
+
     while ($row = $result->fetch_assoc()) {
         echo "<div class='annonce'>";
         echo "<h1>" . $row["titre"] . "</h1>";
@@ -36,7 +52,14 @@ if ($result->num_rows > 0) {
             echo "</video>";
         }
 
-        echo "<p>" . $row["date"] . "</p>";
+        // Formatage de la date pour afficher uniquement le jour, le mois en français et l'heure sans les secondes
+        $date = new DateTime($row["date"]);
+        $month = $mois_fr[$date->format('F')]; // Obtenir le mois en français à partir du tableau de correspondance
+
+        $formattedDate = $date->format('j') . ' ' . $month . ', ' . $date->format('H:i');
+        // 'j' affiche le jour sans le 0 initial, 'H:i' affiche l'heure et les minutes
+
+        echo "<p>" . $formattedDate . "</p>";
         echo "</div>";
     }
 } else {
