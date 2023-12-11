@@ -23,7 +23,8 @@
 					<a href="./blog.php"><i class="fa-solid fa-square-rss" style="color: #ffffff;"></i> Blog</a>
 				</li>
 				<li>
-					<a href="./ressources.php"><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> Ressources</a>
+					<a href="./ressources.php"><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+						Ressources</a>
 				</li>
 				<li>
 					<a href="./contact.html"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Contact</a>
@@ -36,19 +37,20 @@
 			<div class="line3"></div>
 		</div>
 		<ul class="burger-list">
-				<li>
-					<a href="./"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Accueil</a>
-				</li>
-				<li>
-					<a href="./blog.php"><i class="fa-solid fa-square-rss" style="color: #ffffff;"></i> Blog</a>
-				</li>
-				<li>
-					<a href="./ressources.php"><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> Ressources</a>
-				</li>
-				<li>
-					<a href="./contact.html"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Contact</a>
-				</li>
-			</ul>
+			<li>
+				<a href="./"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Accueil</a>
+			</li>
+			<li>
+				<a href="./blog.php"><i class="fa-solid fa-square-rss" style="color: #ffffff;"></i> Blog</a>
+			</li>
+			<li>
+				<a href="./ressources.php"><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+					Ressources</a>
+			</li>
+			<li>
+				<a href="./contact.html"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Contact</a>
+			</li>
+		</ul>
 	</header>
 	<main>
 		<section id="home-text">
