@@ -70,7 +70,7 @@
 
 	<footer>
 		Copyright &copy; 2023-2024
-		<a href="https://www.saint-raphael.be/" target="_blank" rel="noopener noreferrer">Saint-Raphael Remouchamps</a>.
+		<a href="https://www.saint-raphael.be/" target="_blank" rel="noopener noreferrer">Saint-Raphaël Remouchamps</a>.
 		Tous droits réservés.
 	</footer>
 </body>
