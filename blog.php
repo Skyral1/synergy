@@ -32,7 +32,8 @@
 					<a href="./contact.html"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Contact</a>
 				</li>
 				<li>
-					<a href="./create_announcement.php"><i class="fa-solid fa-plus" style="color: #ffffff;"></i> New post</a>
+					<a href="./create_announcement.php"><i class="fa-solid fa-plus" style="color: #ffffff;"></i> New
+						post</a>
 				</li>
 			</ul>
 		</nav>
@@ -74,9 +75,15 @@
 	</main>
 
 	<footer>
-		Copyright &copy; 2023-2024
-		<a href="https://www.saint-raphael.be/" target="_blank" rel="noopener noreferrer">Saint-Raphaël Remouchamps</a>.
-		Tous droits réservés.
+		<div class="footer-content">
+			Copyright &copy; 2023-2024
+			<a href="https://www.saint-raphael.be/" target="_blank" rel="noopener noreferrer">Saint-Raphaël
+				Remouchamps</a>
+			Tous droits réservés.
+			<a href="https://www.facebook.com/profile.php?id=61551151826736" target="_blank" rel="noopener noreferrer">
+				<i class="fa-brands fa-square-facebook fa-lg" style="color: #ffffff;"></i>
+			</a>
+		</div>
 	</footer>
 </body>
 
